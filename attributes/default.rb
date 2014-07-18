@@ -26,6 +26,9 @@ default["openstack"]["image"]["custom_template_banner"] = "
 # Do not edit, changes will be overwritten
 "
 
+default['openstack']['endpoints']['image-api-internal']['uri'] = node['openstack']['endpoints']['image-api']['uri']
+default['openstack']['endpoints']['image-registry-internal']['uri'] = node['openstack']['endpoints']['image-registry']['uri']
+
 default["openstack"]["image"]["verbose"] = "False"
 default["openstack"]["image"]["debug"] = "False"
 # This is the name of the Chef role that will install the Keystone Service API
